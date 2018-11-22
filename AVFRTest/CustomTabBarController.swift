@@ -12,19 +12,31 @@ class CustomTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initTabBarItems()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func initTabBarItems() {
+        
+        if let items = tabBar.items{
+            for (index, item) in items.enumerated(){
+                switch index{
+                case 0:
+                    item.title = "Preview"
+                    item.image =
+                        UIImage(named: "icon_music_normal")?.withRenderingMode(.alwaysOriginal)
+                    item.selectedImage =
+                        UIImage(named: "icon_music_selected")?.withRenderingMode(.alwaysOriginal)
+                case 1:
+                    item.title = "Event"
+                    item.image =
+                        UIImage(named: "icon_skill_normal")?.withRenderingMode(.alwaysOriginal)
+                    item.selectedImage =
+                        UIImage(named: "icon_skill_selected")?.withRenderingMode(.alwaysOriginal)
+                default:
+                    break
+                }
+            }
+        }
     }
-    */
-
 }

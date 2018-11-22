@@ -7,24 +7,28 @@
 //
 
 import UIKit
+import LNSideMenu
 
-class CustomNaivationViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class CustomNaivationViewController: LNSideMenuNavigationController {
+    
+    fileprivate func initialCustomMenu(_ position: Position) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LeftMenuViewController") as! LeftMenuViewController
+        menu = LNSideMenu(navigation: self, menuPosition: position, customSideMenu: vc, size: .custom(UIScreen.main.bounds.width - 60))
+        menu?.delegate = self
+        menu?.enableDynamic = true
+        // Moving down the menu view under navigation bar
+        //    menu?.underNavigationBar = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initialCustomMenu(.left)
+        // Do any additional setup after loading the view.
     }
-    */
-
+}
+extension CustomNaivationViewController: LNSideMenuDelegate {
+    
+    func didSelectItemAtIndex(_ index: Int) {
+        sideMenuManager?.toggleSideMenuView()
+    }
 }

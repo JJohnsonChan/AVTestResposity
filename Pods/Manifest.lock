@@ -1,0 +1,16 @@
+PODS:
+  - LNSideMenu (3.4.2)
+
+DEPENDENCIES:
+  - LNSideMenu (~> 3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LNSideMenu
+
+SPEC CHECKSUMS:
+  LNSideMenu: 41731bc937cf77049c233be2ce198c0a29590bbf
+
+PODFILE CHECKSUM: 0f3c815d323ef70370cdac788bde325c13123d1e
+
+COCOAPODS: 1.5.3
