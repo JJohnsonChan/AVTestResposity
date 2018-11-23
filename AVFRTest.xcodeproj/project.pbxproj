@@ -18,6 +18,12 @@
 		98F9CFC121A68B4D00D89499 /* CustomNaivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9CFC021A68B4D00D89499 /* CustomNaivationViewController.swift */; };
 		98F9CFC321A68BCF00D89499 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9CFC221A68BCF00D89499 /* LeftMenuViewController.swift */; };
 		98F9CFC521A68F0300D89499 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9CFC421A68F0300D89499 /* CustomTabBarController.swift */; };
+		98F9CFC721A698B600D89499 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9CFC621A698B600D89499 /* PushViewController.swift */; };
+		98F9CFCC21A6AE1200D89499 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9CFCB21A6AE1200D89499 /* MediaViewController.swift */; };
+		98F9CFCE21A6AE2E00D89499 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9CFCD21A6AE2E00D89499 /* AboutViewController.swift */; };
+		98F9CFD021A6AE4000D89499 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9CFCF21A6AE4000D89499 /* HelpViewController.swift */; };
+		98F9CFD221A6AE5400D89499 /* AppSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F9CFD121A6AE5400D89499 /* AppSettingViewController.swift */; };
+		98FA3B2C21A79ED500EF388F /* StreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FA3B2B21A79ED500EF388F /* StreamCollectionViewCell.swift */; };
 		BC39E35791E66237A18B7182 /* Pods_AVFRTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41A11FD6C04D9BBC3E4523A /* Pods_AVFRTestUITests.framework */; };
 		D17123C926629BEB5FA785D0 /* Pods_AVFRTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A038FCE53A13510BE847E7 /* Pods_AVFRTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +68,12 @@
 		98F9CFC021A68B4D00D89499 /* CustomNaivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNaivationViewController.swift; sourceTree = "<group>"; };
 		98F9CFC221A68BCF00D89499 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		98F9CFC421A68F0300D89499 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		98F9CFC621A698B600D89499 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		98F9CFCB21A6AE1200D89499 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		98F9CFCD21A6AE2E00D89499 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		98F9CFCF21A6AE4000D89499 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		98F9CFD121A6AE5400D89499 /* AppSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingViewController.swift; sourceTree = "<group>"; };
+		98FA3B2B21A79ED500EF388F /* StreamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCollectionViewCell.swift; sourceTree = "<group>"; };
 		C41A11FD6C04D9BBC3E4523A /* Pods_AVFRTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFRTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D20F8CE2BD65707C617438 /* Pods-AVFRTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFRTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVFRTest/Pods-AVFRTest.release.xcconfig"; sourceTree = "<group>"; };
 		F7A038FCE53A13510BE847E7 /* Pods_AVFRTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFRTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +142,7 @@
 		98F9CF9121A685CA00D89499 /* AVFRTest */ = {
 			isa = PBXGroup;
 			children = (
+				98F9CFCA21A6ADE400D89499 /* DrawerItems */,
 				98F9CF9221A685CA00D89499 /* AppDelegate.swift */,
 				98F9CF9421A685CA00D89499 /* ViewController.swift */,
 				98F9CFC021A68B4D00D89499 /* CustomNaivationViewController.swift */,
@@ -139,6 +152,8 @@
 				98F9CF9E21A685CC00D89499 /* Info.plist */,
 				98F9CFC221A68BCF00D89499 /* LeftMenuViewController.swift */,
 				98F9CFC421A68F0300D89499 /* CustomTabBarController.swift */,
+				98F9CFC621A698B600D89499 /* PushViewController.swift */,
+				98FA3B2B21A79ED500EF388F /* StreamCollectionViewCell.swift */,
 			);
 			path = AVFRTest;
 			sourceTree = "<group>";
@@ -159,6 +174,17 @@
 				98F9CFB421A685CC00D89499 /* Info.plist */,
 			);
 			path = AVFRTestUITests;
+			sourceTree = "<group>";
+		};
+		98F9CFCA21A6ADE400D89499 /* DrawerItems */ = {
+			isa = PBXGroup;
+			children = (
+				98F9CFCB21A6AE1200D89499 /* MediaViewController.swift */,
+				98F9CFD121A6AE5400D89499 /* AppSettingViewController.swift */,
+				98F9CFCD21A6AE2E00D89499 /* AboutViewController.swift */,
+				98F9CFCF21A6AE4000D89499 /* HelpViewController.swift */,
+			);
+			path = DrawerItems;
 			sourceTree = "<group>";
 		};
 		B809D66134F693EE96027F6F /* Pods */ = {
@@ -401,9 +427,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F9CF9521A685CA00D89499 /* ViewController.swift in Sources */,
+				98F9CFCC21A6AE1200D89499 /* MediaViewController.swift in Sources */,
 				98F9CF9321A685CA00D89499 /* AppDelegate.swift in Sources */,
+				98F9CFC721A698B600D89499 /* PushViewController.swift in Sources */,
+				98F9CFD021A6AE4000D89499 /* HelpViewController.swift in Sources */,
+				98F9CFD221A6AE5400D89499 /* AppSettingViewController.swift in Sources */,
 				98F9CFC521A68F0300D89499 /* CustomTabBarController.swift in Sources */,
 				98F9CFC321A68BCF00D89499 /* LeftMenuViewController.swift in Sources */,
+				98F9CFCE21A6AE2E00D89499 /* AboutViewController.swift in Sources */,
+				98FA3B2C21A79ED500EF388F /* StreamCollectionViewCell.swift in Sources */,
 				98F9CFC121A68B4D00D89499 /* CustomNaivationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

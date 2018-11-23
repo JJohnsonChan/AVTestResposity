@@ -14,8 +14,8 @@ class CustomNaivationViewController: LNSideMenuNavigationController {
     fileprivate func initialCustomMenu(_ position: Position) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LeftMenuViewController") as! LeftMenuViewController
         menu = LNSideMenu(navigation: self, menuPosition: position, customSideMenu: vc, size: .custom(UIScreen.main.bounds.width - 60))
-        menu?.delegate = self
         menu?.enableDynamic = true
+        vc.delegate = self
         // Moving down the menu view under navigation bar
         //    menu?.underNavigationBar = true
     }
@@ -26,9 +26,28 @@ class CustomNaivationViewController: LNSideMenuNavigationController {
         // Do any additional setup after loading the view.
     }
 }
-extension CustomNaivationViewController: LNSideMenuDelegate {
-    
+
+extension CustomNaivationViewController: LeftMenuDelegate {
     func didSelectItemAtIndex(_ index: Int) {
         sideMenuManager?.toggleSideMenuView()
+        switch index {
+        case 0:
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MediaViewController") as! MediaViewController
+            self.pushViewController(vc, animated: false)
+        case 1:
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppSettingViewController") as! AppSettingViewController
+            self.pushViewController(vc, animated: false)
+        case 2:
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+            self.pushViewController(vc, animated: false)
+            return
+        case 3:
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelpViewController") as! HelpViewController
+            self.pushViewController(vc, animated: false)
+        default:
+            break
+        }
+        
     }
 }
+

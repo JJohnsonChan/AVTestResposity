@@ -13,8 +13,11 @@ class CustomTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initTabBarItems()
+        initNavigation()
     }
-    
+    func initNavigation(){
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "white_drawer"), style: .done, target: self, action: #selector(btnDrawerTapped))
+    }
 
     private func initTabBarItems() {
         
@@ -38,5 +41,9 @@ class CustomTabBarController: UITabBarController {
                 }
             }
         }
+    }
+    @objc func btnDrawerTapped(){
+        sideMenuManager?.toggleSideMenuView()
+        print("drawer tapped")
     }
 }
